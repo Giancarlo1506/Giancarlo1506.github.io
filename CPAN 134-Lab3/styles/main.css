@@ -1,0 +1,42 @@
+.borde{
+    border: solid white;
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+    width: 700px;
+}
+
+.links a{
+   color: orange;   
+}
+
+.links a:hover{
+    color: green;
+  text-decoration: underline;
+}
+
+.contenido{
+    font-family:sans-serif;
+    width: 650px;
+}
+
+.headers img{
+    float: left;
+    margin-right: 20px;
+
+}
+
+.headers p{
+    padding-top: 30px;
+    overflow: hidden;
+    max-width: 400px;
+}
+
+.halloween{
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    color: orange;
+    text-shadow: 3px 3px 2px black;
+
+}
