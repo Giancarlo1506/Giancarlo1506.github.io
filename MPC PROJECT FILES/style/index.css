@@ -1,15 +1,18 @@
 
-html,
+
 body{
 
     background-color: #fef6eb;
     font-weight: 350px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-
+    zoom: 90%;
 }
+
+
 
 .main{
     width: 100%;
+    text-decoration: none;
 }
 
 .main img{
@@ -48,20 +51,36 @@ body{
 
 }
 
+#line1{
+
+    border: 1px solid  #4197b5;
+    margin: 20px;
+    margin-top:20px ;
+}
 
 .ri-search-line {
     
     margin-right: 30px;
-    margin-left: 450px;
+    margin-left: 15px
 }
+.Sinput{
 
-
+    flex: 1;
+    padding: 8px;
+    border: 1px;
+    outline: 1px;
+   
+}
+.search-btn{
+    background-color: transparent;
+    height: 100%;
+}
 
 
 .contentHomePage{
     display: flex;
-    align-items: center; /* Aligns items vertically */
-            gap: 20%; /* Space between images and text */
+    align-items: center;
+            gap: 20%; 
 }
 
 .places{
@@ -79,4 +98,50 @@ body{
     max-width: 700px;
     font-size: 30px;
    
+}
+
+#line2{
+
+    border: 1px solid  #4197b5;
+    margin: 20px;
+    margin-top:20px ;
+}
+.ftr ul{
+    display: flex;
+    list-style: none;
+    color: black;
+    text-align: center;
+}
+
+.ftr{
+    display: flex;
+    font-size: 30px;
+   justify-content: center;
+   
+    
+    
+} 
+.ftr ul li{
+
+    gap: 20px;
+}
+.ftr a{
+
+    color: black;
+}
+
+.ftr i:hover{
+    color: #4197b5;
+}
+
+.ftr a:hover{
+    color: #4197b5;
+}
+h5{
+    margin-left: 35px;
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
 }
