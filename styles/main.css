@@ -1,0 +1,76 @@
+
+.backgroundImage{
+    background-image: url(../images/bats.gif);
+    width: 1000%;
+    height: 100vh; 
+}
+
+
+.border{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: solid rgb(0, 0, 0);
+    margin: 30px;
+    background-color: rgb(255, 255, 255);
+    width: 800px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0); 
+
+}
+
+.links a{
+   color: orange;   
+}
+
+.links a:hover{
+    color: green;
+  text-decoration: underline;
+}
+
+.content{
+    font-family:sans-serif;
+}
+
+.headers img{
+    margin-right: 10px;
+    height: auto;
+    float: left;
+}
+
+.contentBody{
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+
+.headers{
+   background: linear-gradient(45deg,  #000000, #e9a30c, #ffffff ) ;
+   border-bottom: 1px solid black;
+  margin-block-start: 0em;
+    margin-block-end: 0em;
+
+}
+
+
+.halloween{
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    line-height: 2;
+
+}
+
+footer{
+  
+  height: 50px;
+  background: linear-gradient(45deg,  #000000, #e9a30c, #ffffff ) ;
+  border-top: 1px solid black;
+}
+
+footer p{
+    text-align: center;
+    padding:5px
+}
+
