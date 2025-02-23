@@ -1,147 +1,136 @@
-
-
-body{
-
+/* style of the general body*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #fef6eb;
-    font-weight: 350px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    zoom: 90%;
+    color: #333;
 }
 
 
-
-.main{
+.main {
     width: 100%;
-    text-decoration: none;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-.main img{
-    float: left;
-    margin-top: 20px;
-    display: flex;
-}
-
-.header ul{
-    display: flex;
-    list-style: none;
-    color: black;
-}
-
-.header ul li{
-    margin-left: 100px;
-    margin-top: 40px;
-    font-size: 20px;
-    font-weight: 1000px;  
-    text-transform: uppercase;
-    align-content:center ;
-    
-} 
-
-.header a{
-
-    color: black;
-}
-
-.header i:hover{
-    color: #4197b5;
-}
-
-.header a:hover{
-    color: #4197b5;
-
-}
-
-#line1{
-
-    border: 1px solid  #4197b5;
-    margin: 20px;
-    margin-top:20px ;
-}
-
-.ri-search-line {
-    
-    margin-right: 30px;
-    margin-left: 15px
-}
-.Sinput{
-
-    flex: 1;
-    padding: 8px;
-    border: 1px;
-    outline: 1px;
-   
-}
-.search-btn{
-    background-color: transparent;
-    height: 100%;
-}
-
-
-.contentHomePage{
-    display: flex;
-    align-items: center;
-            gap: 20%; 
-}
-
-.places{
-    display: flex;
-    flex-direction: column;
-    float: left;
- 
-    
-}
-
-.presentation{
-    background-color: #fef6eb; 
-    padding: 15px;  
-    border-radius: 8px; 
-    max-width: 700px;
-    font-size: 30px;
-   
-}
-
-#line2{
-
-    border: 1px solid  #4197b5;
-    margin: 20px;
-    margin-top:20px ;
-}
-.ftr ul{
-    display: flex;
-    list-style: none;
-    color: black;
-    text-align: center;
-}
-
-.ftr{
-    display: flex;
-    font-size: 30px;
-   justify-content: center;
-   
-    
-    
-} 
-.ftr ul li{
-
-    gap: 20px;
-}
-.ftr a{
-
-    color: black;
-}
-
-.ftr i:hover{
-    color: #4197b5;
-}
-
-.ftr a:hover{
-    color: #4197b5;
-}
-h5{
-    margin-left: 35px;
+/* Logo */
+.logo {
     display: flex;
     justify-content: center;
+    margin: 10px 0;
 }
-a{
+.logo img {
+    max-width: 300px;
+    height: auto;
+}
+
+/* css for the header*/
+.header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    gap: 10px;
+}
+.header ul li {
+    margin: 5px 10px;
+}
+.header ul li a {
     text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+.header ul li a:hover {
+    color: #4197b5;
+}
+
+/* css for the search bar */
+.search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.Sinput {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+}
+.search-btn {
+    background-color: #4197b5;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.search-btn:hover {
+    background-color: #317a8d;
+}
+
+/* css for the content between the header and the footer*/
+
+.places img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.contentHomePage {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+/* css for the presentation of the brand*/
+
+.presentation {
+    max-width: 700px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Css for the Footer that display the logos of the social media */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #4197b5;
+    color: white;
+    margin-top: 20px;
+}
+footer ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    gap: 10px;
+}
+footer ul li a {
+    color: white;
+    font-size: 20px;
+}
+
+/* wee add the media queries for the Responsiveness */
+@media (max-width: 768px) {
+    .header ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .places img {
+        max-width: 100%;
+    }
+    .presentation {
+        font-size: 16px;
+    }
 }
